@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 1
+  start_time: 1
+  audience: MyString
+  event_notes: MyString
+  instructor/alternate: MyString
+  uniform: MyString
+  location: MyString
+  risk_level: MyString
+  reference: MyString
+
+two:
+  date: 1
+  start_time: 1
+  audience: MyString
+  event_notes: MyString
+  instructor/alternate: MyString
+  uniform: MyString
+  location: MyString
+  risk_level: MyString
+  reference: MyString

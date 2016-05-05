@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @calendar.date %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @calendar.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @calendar.end_time %>
+</p>
+
+<p>
+  <strong>Audience:</strong>
+  <%= @calendar.audience %>
+</p>
+
+<p>
+  <strong>Event notes:</strong>
+  <%= @calendar.event_notes %>
+</p>
+
+<p>
+  <strong>Instructor:</strong>
+  <%= @calendar.instructor%>
+</p>
+
+<p>
+  <strong>Uniform:</strong>
+  <%= @calendar.uniform %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @calendar.location %>
+</p>
+
+<p>
+  <strong>Risk level:</strong>
+  <%= @calendar.risk_level %>
+</p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @calendar.reference %>
+</p>
+
+<%= link_to 'Edit', edit_calendar_path(@calendar) %> |
+<%= link_to 'Back', calendars_path %>

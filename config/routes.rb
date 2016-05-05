@@ -1,4 +1,8 @@
 Myapp::Application.routes.draw do
+  resources :calendars do
+    collection { post :import}
+  end
+
   resources :collections
   devise_for :users
   get "home/index"
