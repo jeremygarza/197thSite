@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160505214947) do
+ActiveRecord::Schema.define(version: 20160505232935) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "augmentaion_contacts", force: :cascade do |t|
+    t.string   "position"
+    t.string   "last_name"
+    t.string   "first_name"
+    t.string   "rank"
+    t.string   "phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "calendars", force: :cascade do |t|
     t.date     "date"
@@ -41,6 +51,36 @@ ActiveRecord::Schema.define(version: 20160505214947) do
   add_index "collections", ["user_id"], name: "index_collections_on_user_id", using: :btree
 
   create_table "contacts", force: :cascade do |t|
+    t.string   "position"
+    t.string   "last_name"
+    t.string   "first_name"
+    t.string   "rank"
+    t.string   "phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "engineer_contacts", force: :cascade do |t|
+    t.string   "position"
+    t.string   "last_name"
+    t.string   "first_name"
+    t.string   "rank"
+    t.string   "phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "maintenance_contacts", force: :cascade do |t|
+    t.string   "position"
+    t.string   "last_name"
+    t.string   "first_name"
+    t.string   "rank"
+    t.string   "phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "support_contacts", force: :cascade do |t|
     t.string   "position"
     t.string   "last_name"
     t.string   "first_name"

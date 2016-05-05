@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @engineer_contact.position %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @engineer_contact.last_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @engineer_contact.first_name %>
+</p>
+
+<p>
+  <strong>Rank:</strong>
+  <%= @engineer_contact.rank %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @engineer_contact.phone %>
+</p>
+
+<%= link_to 'Edit', edit_engineer_contact_path(@engineer_contact) %> |
+<%= link_to 'Back', engineer_contacts_path %>

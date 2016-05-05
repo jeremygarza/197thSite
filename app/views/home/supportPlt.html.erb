@@ -17,21 +17,24 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <% @contacts.each do |contact| %>
-                    <tr>
-                      <td><%= contact.position %></td>
-                      <td><%= contact.last_name %></td>
-                      <td><%= contact.first_name %></td>
-                      <td><%= contact.rank %></td>
-                      <td><%= contact.phone %></td>
-                      <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-                      <td><%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-                    </tr>
-                  <% end %>
-                </tbody>
-              </table>
-              <br>
-              <%= link_to 'New Contact', new_contact_path %>
+    <% @support_contacts.each do |support_contact| %>
+      <tr>
+        <td><%= support_contact.position %></td>
+        <td><%= support_contact.last_name %></td>
+        <td><%= support_contact.first_name %></td>
+        <td><%= support_contact.rank %></td>
+        <td><%= support_contact.phone %></td>
+        <td><%= link_to 'Show', support_contact %></td>
+        <td><%= link_to 'Edit', edit_support_contact_path(support_contact) %></td>
+        <td><%= link_to 'Destroy', support_contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Support contact', new_support_contact_path %>
             </div>
           </div>
         </div>

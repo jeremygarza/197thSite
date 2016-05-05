@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @maintenance_contact.position %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @maintenance_contact.last_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @maintenance_contact.first_name %>
+</p>
+
+<p>
+  <strong>Rank:</strong>
+  <%= @maintenance_contact.rank %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @maintenance_contact.phone %>
+</p>
+
+<%= link_to 'Edit', edit_maintenance_contact_path(@maintenance_contact) %> |
+<%= link_to 'Back', maintenance_contacts_path %>

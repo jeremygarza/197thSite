@@ -6,19 +6,19 @@ class HomeController < ApplicationController
   end
 
   def augmentationPlt
-    @contacts = Contact.all
+    @augmentaion_contacts = AugmentaionContact.all
   end
 
   def engineerPlt
-    @contacts = Contact.all
-  end
+    @engineer_contacts = EngineerContact.all
+ end
 
   def maintenancePlt
-    @contacts = Contact.all
+    @maintenance_contacts = MaintenanceContact.all
   end
 
   def supportPlt
-    @contacts = Contact.all
+    @support_contacts = SupportContact.all
   end
 
   def minor

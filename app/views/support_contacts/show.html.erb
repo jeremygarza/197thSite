@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @support_contact.position %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @support_contact.last_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @support_contact.first_name %>
+</p>
+
+<p>
+  <strong>Rank:</strong>
+  <%= @support_contact.rank %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @support_contact.phone %>
+</p>
+
+<%= link_to 'Edit', edit_support_contact_path(@support_contact) %> |
+<%= link_to 'Back', support_contacts_path %>

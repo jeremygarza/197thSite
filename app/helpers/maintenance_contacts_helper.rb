@@ -1,0 +1,2 @@
+module MaintenanceContactsHelper
+end

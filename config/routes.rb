@@ -1,4 +1,8 @@
 Myapp::Application.routes.draw do
+  resources :support_contacts
+  resources :maintenance_contacts
+  resources :engineer_contacts
+  resources :augmentaion_contacts
   resources :contacts
   resources :calendars do
     collection { post :import}
