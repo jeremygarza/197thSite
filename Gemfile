@@ -37,7 +37,6 @@ gem 'devise'
 
 gem 'pry'
 
-gem 'web-console', '~> 2.0'
 
 gem 'rails_12factor'
 
@@ -49,6 +48,7 @@ gem 'rails_12factor'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
-
+ gem 'web-console', group: :development
+ gem 'rails_12factor', group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
