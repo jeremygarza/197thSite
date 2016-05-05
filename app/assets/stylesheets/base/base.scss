@@ -16,7 +16,9 @@ body.full-height-layout #wrapper,
 body.full-height-layout #page-wrapper {
   height: 100%;
 }
-
+span.nav-label{
+  margin-left: 10px;
+}
 #page-wrapper {
   min-height: auto;
 }

@@ -22,20 +22,38 @@
                 </div>
             </li>
 
-            <li class="<%= 'active' if current_page?('/') %>">
+            <li class="<%= 'active' if current_page?('/calendars') %>">
                 <%= link_to "/calendars" do %>
-                <i class="fa fa-calendar"></i> <span class="nav-label">Calendar</span>
+                <!-- Calendar icon by Icons8 -->
+                <img src="https://maxcdn.icons8.com/iOS7/PNG/25/Time_And_Date/calendar-25.png" title="Calendar" width="20"> <span class="nav-label">Calendar</span>
                 <% end %>
             </li>
 
             <li class="<%= 'active' if current_page?('/') %>">
                 <%= link_to "/" do %>
-                <i class="fa fa-laptop"></i> <span class="nav-label">Home page</span>
+                <img class="plt" src="https://maxcdn.icons8.com/iOS7/PNG/25/Sports/centre_of_gravity_filled-25.png" title="Centre of Gravity Filled" width="20"> <span class="nav-label">Home page</span>
                 <% end %>
             </li>
-            <li class="<%= 'active' if current_page?('/home/minor') %>">
-                <%= link_to "/home/minor" do %>
-                <i class="fa fa-desktop"></i> <span class="nav-label">Plt page</span>
+            <li class="<%= 'active' if current_page?('/home/maintenancePlt') %>">
+                <%= link_to "/home/maintenancePlt" do %>
+                <img class="plt" src="https://maxcdn.icons8.com/iOS7/PNG/25/Business/maintenance-25.png" title="Maintenance" width="20"> <span class="nav-label">Maintenance PLT</span>
+                <% end %>
+            </li>
+            <li class="<%= 'active' if current_page?('/home/augmentationPlt') %>">
+                <%= link_to "/home/augmentationPlt" do %>
+                <img class="plt" src="https://maxcdn.icons8.com/iOS7/PNG/25/Military/self_destruct_button-25.png" title="Self-Destruct Button" width="20"><span class="nav-label">Augmentation PLT</span>
+                <% end %>
+            </li>
+
+            <li class="<%= 'active' if current_page?('/home/engineerPlt') %>">
+                <%= link_to "/home/engineerPlt" do %>
+                <img src="https://maxcdn.icons8.com/iOS7/PNG/25/Military/explosion_filled-25.png" title="Explosion Filled" width="20"> <span class="nav-label">Engineer PLT</span>
+                <% end %>
+            </li>
+
+            <li class="<%= 'active' if current_page?('/home/supportPlt') %>">
+                <%= link_to "/home/supportPlt" do %>
+                <img class="plt" src="https://maxcdn.icons8.com/iOS7/PNG/25/Military/dog_tag-25.png" title="Dog Tag" width="20"> <span class="nav-label">Support PLT</span>
                 <% end %>
             </li>
 
