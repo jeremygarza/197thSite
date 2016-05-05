@@ -1,4 +1,5 @@
 Myapp::Application.routes.draw do
+  resources :contacts
   resources :calendars do
     collection { post :import}
   end
