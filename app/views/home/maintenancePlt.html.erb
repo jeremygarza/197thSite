@@ -17,24 +17,24 @@
                   </tr>
                 </thead>
                 <tbody>
-    <% @maintenance_contacts.each do |maintenance_contact| %>
-      <tr>
-        <td><%= maintenance_contact.position %></td>
-        <td><%= maintenance_contact.last_name %></td>
-        <td><%= maintenance_contact.first_name %></td>
-        <td><%= maintenance_contact.rank %></td>
-        <td><%= maintenance_contact.phone %></td>
-        <td><%= link_to 'Show', maintenance_contact %></td>
-        <td><%= link_to 'Edit', edit_maintenance_contact_path(maintenance_contact) %></td>
-        <td><%= link_to 'Destroy', maintenance_contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+                  <% @maintenance_contacts.each do |maintenance_contact| %>
+                    <tr>
+                      <td><%= maintenance_contact.position %></td>
+                      <td><%= maintenance_contact.last_name %></td>
+                      <td><%= maintenance_contact.first_name %></td>
+                      <td><%= maintenance_contact.rank %></td>
+                      <td><%= maintenance_contact.phone %></td>
+                      <td><%= link_to 'Show', maintenance_contact %></td>
+                      <td><%= link_to 'Edit', edit_maintenance_contact_path(maintenance_contact) %></td>
+                      <td><%= link_to 'Destroy', maintenance_contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
 
-<br>
+              <br>
 
-<%= link_to 'New Maintenance contact', new_maintenance_contact_path %>
+              <%= link_to 'New Maintenance contact', new_maintenance_contact_path %>
             </div>
           </div>
         </div>

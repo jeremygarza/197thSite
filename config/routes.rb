@@ -1,4 +1,5 @@
 Myapp::Application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :support_contacts
   resources :maintenance_contacts
   resources :engineer_contacts

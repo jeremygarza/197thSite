@@ -17,21 +17,21 @@
                   </tr>
                 </thead>
 
-  <tbody>
-    <% @engineer_contacts.each do |engineer_contact| %>
-      <tr>
-        <td><%= engineer_contact.position %></td>
-        <td><%= engineer_contact.last_name %></td>
-        <td><%= engineer_contact.first_name %></td>
-        <td><%= engineer_contact.rank %></td>
-        <td><%= engineer_contact.phone %></td>
-        <td><%= link_to 'Show', engineer_contact %></td>
-        <td><%= link_to 'Edit', edit_engineer_contact_path(engineer_contact) %></td>
-        <td><%= link_to 'Destroy', engineer_contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+                  <tbody>
+                    <% @engineer_contacts.each do |engineer_contact| %>
+                      <tr>
+                        <td><%= engineer_contact.position %></td>
+                        <td><%= engineer_contact.last_name %></td>
+                        <td><%= engineer_contact.first_name %></td>
+                        <td><%= engineer_contact.rank %></td>
+                        <td><%= engineer_contact.phone %></td>
+                        <td><%= link_to 'Show', engineer_contact %></td>
+                        <td><%= link_to 'Edit', edit_engineer_contact_path(engineer_contact) %></td>
+                        <td><%= link_to 'Destroy', engineer_contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                      </tr>
+                    <% end %>
+                  </tbody>
+                </table>
 
 <br>
 

@@ -17,24 +17,24 @@
                   </tr>
                 </thead>
                 <tbody>
-    <% @augmentaion_contacts.each do |augmentaion_contact| %>
-      <tr>
-        <td><%= augmentaion_contact.position %></td>
-        <td><%= augmentaion_contact.last_name %></td>
-        <td><%= augmentaion_contact.first_name %></td>
-        <td><%= augmentaion_contact.rank %></td>
-        <td><%= augmentaion_contact.phone %></td>
-        <td><%= link_to 'Show', augmentaion_contact %></td>
-        <td><%= link_to 'Edit', edit_augmentaion_contact_path(augmentaion_contact) %></td>
-        <td><%= link_to 'Destroy', augmentaion_contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+                <% @augmentaion_contacts.each do |augmentaion_contact| %>
+                  <tr>
+                    <td><%= augmentaion_contact.position %></td>
+                    <td><%= augmentaion_contact.last_name %></td>
+                    <td><%= augmentaion_contact.first_name %></td>
+                    <td><%= augmentaion_contact.rank %></td>
+                    <td><%= augmentaion_contact.phone %></td>
+                    <td><%= link_to 'Show', augmentaion_contact %></td>
+                    <td><%= link_to 'Edit', edit_augmentaion_contact_path(augmentaion_contact) %></td>
+                    <td><%= link_to 'Destroy', augmentaion_contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
 
-<br>
+            <br>
 
-<%= link_to 'New Augmentaion contact', new_augmentaion_contact_path %>
+            <%= link_to 'New Augmentaion contact', new_augmentaion_contact_path %>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ class CalendarsController < ApplicationController
   # GET /calendars/1
   # GET /calendars/1.json
   def show
-    raise
+
   end
 
   # GET /calendars/new
@@ -75,6 +75,6 @@ class CalendarsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def calendar_params
-      params.require(:calendar).permit(:date, :start_time, :audience, :event_notes, :instructor, :uniform, :location, :risk_level, :reference)
+      params.require(:calendar).permit(:date, :start_time, :end_time, :audience, :event_notes, :instructor, :uniform, :location, :risk_level, :reference)
     end
 end

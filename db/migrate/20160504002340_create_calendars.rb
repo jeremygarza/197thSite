@@ -1,8 +1,9 @@
 class CreateCalendars < ActiveRecord::Migration
   def change
     create_table :calendars do |t|
-      t.date :date
-      t.time :start_time
+      t.string :date
+      t.string :start_time
+      t.string :end_time
       t.string :audience
       t.string :event_notes
       t.string :instructor
